@@ -45,7 +45,7 @@ public class NewsMessage extends MessageBase {
   }
 
   @Override
-  public void preHandle() {
+  protected void preHandle() {
     assert (!this.news.articles.isEmpty());
   }
 

@@ -4,7 +4,7 @@ import com.threedr3am.wxwork.util.JsonMapper;
 
 public abstract class MessageBase {
 
-  public abstract void preHandle();
+  protected abstract void preHandle();
 
   public String build() {
     preHandle();

@@ -37,7 +37,7 @@ public class TextMessage extends MessageBase {
   }
 
   @Override
-  public void preHandle() {
+  protected void preHandle() {
     assert (this.text.content != null);
   }
 

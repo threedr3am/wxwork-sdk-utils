@@ -37,7 +37,7 @@ public class MarkdownMessage extends MessageBase {
   }
 
   @Override
-  public void preHandle() {
+  protected void preHandle() {
     assert (this.markdown.content != null || this.markdown.tmp.length() > 0);
     if (this.markdown.tmp.length() > 0) {
       this.markdown.content = this.markdown.tmp.toString();

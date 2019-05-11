@@ -52,7 +52,7 @@ public class ImageMessage extends MessageBase {
   }
 
   @Override
-  public void preHandle() {
+  protected void preHandle() {
     if (this.image.tmpFile != null && this.image.tmpFile.exists()) {
       ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
       try {
