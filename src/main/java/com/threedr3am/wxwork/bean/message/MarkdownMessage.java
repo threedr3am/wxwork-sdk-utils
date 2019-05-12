@@ -49,6 +49,20 @@ public class MarkdownMessage extends MessageBase {
     return this;
   }
 
+  /**
+   * 换行
+   * @return
+   */
+  public MarkdownMessage newLine() {
+    this.markdown.tmp.append("\n");
+    return this;
+  }
+
+  /**
+   * 自定义内容
+   * @param normal
+   * @return
+   */
   public MarkdownMessage appendNormal(String normal) {
     this.markdown.tmp.append(normal);
     return this;
@@ -125,7 +139,7 @@ public class MarkdownMessage extends MessageBase {
    * @param text
    * @return
    */
-  public MarkdownMessage appendCommentnMsg(String text) {
+  public MarkdownMessage appendCommentMsg(String text) {
     this.markdown.tmp.append("<font color=\"comment\">".concat(text).concat("</font>"));
     return this;
   }
