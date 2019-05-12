@@ -1,8 +1,8 @@
-package com.threedr3am.wxwork.bean.message;
+package com.threedr3am.wxwork.bean.robot.message;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.threedr3am.wxwork.bean.MessageBase;
+import com.threedr3am.wxwork.bean.robot.MessageBase;
 import com.threedr3am.wxwork.enums.MsgType;
 import java.util.ArrayList;
 import java.util.List;

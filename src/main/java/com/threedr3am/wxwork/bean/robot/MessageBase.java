@@ -1,4 +1,4 @@
-package com.threedr3am.wxwork.bean;
+package com.threedr3am.wxwork.bean.robot;
 
 import com.threedr3am.wxwork.util.JsonMapper;
 

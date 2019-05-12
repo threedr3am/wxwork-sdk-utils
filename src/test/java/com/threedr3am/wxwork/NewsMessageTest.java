@@ -2,15 +2,8 @@ package com.threedr3am.wxwork;
 
 import static org.junit.Assert.assertTrue;
 
-import com.threedr3am.wxwork.bean.message.ImageMessage;
-import com.threedr3am.wxwork.bean.message.NewsMessage;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import com.threedr3am.wxwork.bean.robot.message.ImageMessage;
+import com.threedr3am.wxwork.bean.robot.message.NewsMessage;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 

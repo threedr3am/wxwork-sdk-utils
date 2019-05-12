@@ -1,9 +1,12 @@
 package com.threedr3am.wxwork.support;
 
-import com.threedr3am.wxwork.bean.message.MarkdownMessage;
-import com.threedr3am.wxwork.bean.message.TextMessage;
+import com.threedr3am.wxwork.bean.robot.message.MarkdownMessage;
+import com.threedr3am.wxwork.bean.robot.message.TextMessage;
 import java.util.List;
 
+/**
+ * 机器人消息快速构建类
+ */
 public class MessageBuilder {
   public static TextMessage buildTextMessage(String msg, List<String> userIds, List<String> mobiles) {
     return new TextMessage().msg(msg).setUserIdReceiver(userIds).setMobileReceiver(mobiles);

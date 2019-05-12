@@ -2,22 +2,14 @@ package com.threedr3am.wxwork;
 
 import static org.junit.Assert.assertTrue;
 
-import com.threedr3am.wxwork.bean.message.ImageMessage;
-import java.io.ByteArrayInputStream;
+import com.threedr3am.wxwork.bean.robot.message.ImageMessage;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 /**

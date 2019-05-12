@@ -2,9 +2,8 @@ package com.threedr3am.wxwork;
 
 import static org.junit.Assert.assertTrue;
 
-import com.threedr3am.wxwork.bean.message.MarkdownMessage;
+import com.threedr3am.wxwork.bean.robot.message.MarkdownMessage;
 import com.threedr3am.wxwork.support.MessageBuilder;
-import java.util.Arrays;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 

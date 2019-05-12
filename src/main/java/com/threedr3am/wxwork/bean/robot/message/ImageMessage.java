@@ -1,20 +1,16 @@
-package com.threedr3am.wxwork.bean.message;
+package com.threedr3am.wxwork.bean.robot.message;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.threedr3am.wxwork.bean.MessageBase;
+import com.threedr3am.wxwork.bean.robot.MessageBase;
 import com.threedr3am.wxwork.enums.MsgType;
 import com.threedr3am.wxwork.util.Base64Translater;
 import com.threedr3am.wxwork.util.HexTranslater;
 import com.threedr3am.wxwork.util.Md5Crypto;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
 import lombok.Getter;
 
 /**
