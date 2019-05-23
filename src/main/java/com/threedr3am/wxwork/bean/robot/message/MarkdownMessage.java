@@ -151,4 +151,91 @@ public class MarkdownMessage extends MessageBase {
     this.markdown.tmp.append("<font color=\"warning\">".concat(text).concat("</font>"));
     return this;
   }
+
+
+  /**
+   * 包装MarkDown支持
+   */
+  public static class Warpper {
+
+    /**
+     * 构造1-6级标题返回
+     * @param title
+     * @param level
+     * @return
+     */
+    public static String warpLevelTitle(String title, int level) {
+      assert (level > 0 && level < 7);
+      StringBuilder tmp = new StringBuilder();
+      for (int i = 0; i < level; i++) {
+        tmp.append("#");
+      }
+      tmp.append(" ".concat(title));
+      return tmp.toString();
+    }
+
+    /**
+     * 构造加粗文字返回
+     * @param bold
+     * @return
+     */
+    public static String warpBold(String bold) {
+      return "**".concat(bold).concat("**");
+    }
+
+    /**
+     * 构造链接返回
+     * @param url
+     * @param text
+     * @return
+     */
+    public static String warpHref(String url, String text) {
+      return "[".concat(text).concat("](").concat(url).concat(")");
+    }
+
+    /**
+     * 构造行内代码返回
+     * @param code
+     * @return
+     */
+    public static String warpLineCode(String code) {
+      return "`".concat(code).concat("`");
+    }
+
+    /**
+     * 构造引用返回
+     * @param reference
+     * @return
+     */
+    public static String warpReference(String reference) {
+      return "> ".concat(reference);
+    }
+
+    /**
+     * 构造绿色文字返回
+     * @param text
+     * @return
+     */
+    public static String warpInfoMsg(String text) {
+      return "<font color=\"info\">".concat(text).concat("</font>");
+    }
+
+    /**
+     * 构造灰色文字返回
+     * @param text
+     * @return
+     */
+    public static String warpCommentMsg(String text) {
+      return "<font color=\"comment\">".concat(text).concat("</font>");
+    }
+
+    /**
+     * 构造橙红色文字返回
+     * @param text
+     * @return
+     */
+    public static String warpWarningMsg(String text) {
+      return "<font color=\"warning\">".concat(text).concat("</font>");
+    }
+  }
 }

@@ -76,6 +76,21 @@ new MarkdownMessage()
   .appendLineCode("new MarkdownMessage();//单行代码")
   .build();
 ```
+warpper支持
+```
+String msg = new MarkdownMessage()
+  .appendNormal(MarkdownMessage.Warpper.warpLevelTitle("二级标题",2))
+  .appendNormal("自定义内容")
+  .newLine()//换行
+  .appendNormal(MarkdownMessage.Warpper.warpBold("文字加粗"))
+  .appendNormal(MarkdownMessage.Warpper.warpHref("https://www.baidu.com","百度链接"))
+  .appendNormal(MarkdownMessage.Warpper.warpReference("引用"))
+  .appendNormal(MarkdownMessage.Warpper.warpInfoMsg("绿色文字"))
+  .appendNormal(MarkdownMessage.Warpper.warpCommentMsg("灰色文字"))
+  .appendNormal(MarkdownMessage.Warpper.warpWarningMsg("橙红色文字"))
+  .appendNormal(MarkdownMessage.Warpper.warpLineCode("new MarkdownMessage();//单行代码"))
+  .build();
+```
 
 ##### 3. 构建图片消息（ImageMessage）
 
