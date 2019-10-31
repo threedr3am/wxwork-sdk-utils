@@ -2,20 +2,20 @@
 目前具有以下实现：
 1. 机器人webhook utils
 
-
+------
 
 ### 机器人webhook utils
 ##### 1.构建文本消息（TextMessage）
 
 **MessageBuilder快速构建**
 
-发送文本"test"，并且@所有手机号对应的用户
+作用：发送文本"test"，并且@所有手机号对应的用户
 ```
 MessageBuilder
   .buildTextMessage("test",false,true)
   .build()
 ```
-参数
+条件：参数
 ```
 String msg ：发送的文本消息内容
 boolean forAllUserIds ：是否@所有userId发送
@@ -24,13 +24,13 @@ public static TextMessage buildTextMessage(String msg, boolean forAllUserIds, bo
 ```
 --- 
 
-发送文本"test"，并且@userId为1、2、3以及手机号为4、5、6的用户
+作用：发送文本"test"，并且@userId为1、2、3以及手机号为4、5、6的用户
 ```
 MessageBuilder
   .buildTextMessage("test",Arrays.asList("1","2","3"),Arrays.asList("4","5","6"))
   .build()
 ```
-参数
+条件：参数
 ```
 String msg ：发送的文本消息内容
 List<String> userIds ：@的用户userId集合
@@ -40,7 +40,7 @@ public static TextMessage buildTextMessage(String msg, List<String> userIds, Lis
 
 **TextMessage自定义构建**
 
-发送文本内容"test"，并且@手机号为1、2、3的用户以及userId为4、5、6的用户
+作用：发送文本内容"test"，并且@手机号为1、2、3的用户以及userId为4、5、6的用户
 ```
 new TextMessage()
   .msg("test")
